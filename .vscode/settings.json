@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.suggest.enabled": false,
+    "terminal.integrated.suggest.providers": {
+        "lsp": false,
+        "vscode.terminal-suggest": false
+    }
+}
