@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    std::io::stdout().write_all(b"Hello, world!\n");
 }

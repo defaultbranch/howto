@@ -69,8 +69,17 @@ hello_world/
         └── incremental
 ```
 
-# The println macro
+## The println macro
 
 Rust leverages some compilation work through a macro preprocessor. `println!` uses `print!` which calls `std::io::_print`.
 
+## Without macro
+
+```
+fn main() {
+    std::io::stdout().write_all(b"Hello, world!\n");
+}
+```
+
+The subtle issue here is that `write_all` returns a `Result` that may be an error.
 
